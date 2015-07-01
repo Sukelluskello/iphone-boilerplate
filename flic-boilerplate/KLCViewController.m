@@ -113,4 +113,16 @@
 	
 }
 
+#pragma mark - SCLFlicManagerDelegate
+
+- (void) flicManager:(SCLFlicManager *)manager didChangeBluetoothState:(SCLFlicManagerBluetoothState)state;
+{
+    // Not used at this time
+}
+
+- (void) flicManager:(SCLFlicManager *)manager didDiscoverButton:(SCLFlicButton *)button withRSSI:(NSNumber *)RSSI;
+{
+    // Not used at this time
+}
+
 @end

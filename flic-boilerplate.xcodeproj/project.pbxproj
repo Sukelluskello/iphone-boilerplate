@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A712AEA1B443B2F00446B88 /* fliclib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A712AE71B443B2400446B88 /* fliclib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A712AEB1B443B4900446B88 /* fliclib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A712AE71B443B2400446B88 /* fliclib.framework */; };
 		751130E11B09C14D0086E779 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751130E01B09C14D0086E779 /* Images.xcassets */; };
 		751130F01B09C14D0086E779 /* flic_boilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 751130EF1B09C14D0086E779 /* flic_boilerplateTests.m */; };
-		751131011B09D31B0086E779 /* fliclib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751131001B09D31B0086E779 /* fliclib.framework */; };
-		751131021B09D31B0086E779 /* fliclib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 751131001B09D31B0086E779 /* fliclib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		751131151B09EB050086E779 /* KLCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 751131121B09EB050086E779 /* KLCAppDelegate.m */; };
 		751131161B09EB050086E779 /* KLCViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 751131141B09EB050086E779 /* KLCViewControllerBase.m */; };
 		7511311B1B09EB630086E779 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751131191B09EB630086E779 /* LaunchScreen.xib */; };
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				751131021B09D31B0086E779 /* fliclib.framework in Embed Frameworks */,
+				3A712AEA1B443B2F00446B88 /* fliclib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +50,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A712AE71B443B2400446B88 /* fliclib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = fliclib.framework; path = libs/fliclib.framework; sourceTree = "<group>"; };
 		751130D01B09C14D0086E779 /* flic-boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flic-boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		751130E01B09C14D0086E779 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		751130E91B09C14D0086E779 /* flic-boilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flic-boilerplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		751130EE1B09C14D0086E779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		751130EF1B09C14D0086E779 /* flic_boilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flic_boilerplateTests.m; sourceTree = "<group>"; };
-		751131001B09D31B0086E779 /* fliclib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = fliclib.framework; path = libs/fliclib.framework; sourceTree = "<group>"; };
 		751131111B09EB050086E779 /* KLCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCAppDelegate.h; sourceTree = "<group>"; };
 		751131121B09EB050086E779 /* KLCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCAppDelegate.m; sourceTree = "<group>"; };
 		751131131B09EB050086E779 /* KLCViewControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCViewControllerBase.h; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751131011B09D31B0086E779 /* fliclib.framework in Frameworks */,
+				3A712AEB1B443B4900446B88 /* fliclib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 		751130FD1B09D2740086E779 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				751131001B09D31B0086E779 /* fliclib.framework */,
+				3A712AE71B443B2400446B88 /* fliclib.framework */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -426,8 +426,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Oskar Öberg (NH8C5B36VT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Oskar Öberg (NH8C5B36VT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/flic-boilerplate/libs",
@@ -439,7 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3c63eb7-4621-4c63-a9e7-21dece5daeb7";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -448,8 +448,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Oskar Öberg (NH8C5B36VT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Oskar Öberg (NH8C5B36VT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/flic-boilerplate/libs",
@@ -460,7 +460,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3c63eb7-4621-4c63-a9e7-21dece5daeb7";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
